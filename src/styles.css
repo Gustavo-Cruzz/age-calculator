@@ -9,7 +9,7 @@
     min-height: 100vh;
     padding: 20px;
     background-image: url('time2.jpg');
-    background-size: contain; 
+    background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
