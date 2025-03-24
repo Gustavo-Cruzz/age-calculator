@@ -21,7 +21,7 @@ export function validateInput(day, month, year) {
     if (!year) {
       errors.year = 'Campo obrigatório';
       isValid = false;
-    } else if (year > new Date().getFullYear()) {
+    } else if (year > new Date().getFullYear() || year < 0) {
       errors.year = 'Ano inválido';
       isValid = false;
     }
