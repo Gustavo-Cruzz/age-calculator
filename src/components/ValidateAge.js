@@ -27,7 +27,7 @@ export function validateInput(day, month, year) {
     }
   
     if (day && month && year) {
-      const date = new Date(`${year}-${month}-${day}`);
+      const date = new Date(year, month - 1, day);
       if (isNaN(date.getTime())) {
         errors.day = 'Data inválida';
         errors.month = 'Data inválida';
